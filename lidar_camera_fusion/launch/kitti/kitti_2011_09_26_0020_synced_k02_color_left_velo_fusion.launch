@@ -1,0 +1,35 @@
+<launch>
+    <!-- 输入图像缺省值改为 ZED 相机左话题-->
+    <arg name = "left_image_input" default = "/kitti/camera_color_left/image_raw"/>
+
+    <!-- 输入点云缺省值要改成 Robosense 雷达主题名 -->
+    <arg name = "cloud_input" default = "/kitti/velo/pointcloud"/>
+
+    <arg name = "semantic_img" default = "/semantic_img"/>
+
+    <arg name = "semantic_confidence" default = "/semantic_array"/>
+
+    <!-- 图像点云融合输出话题名 -->
+    <arg name = "semantic_cloud_max" default = "/semantic_cloud_max"/>
+
+    <arg name = "is_kitti" default = "true"/>
+
+    <!-- 左相机与雷达 Autoware 外参标定文件路径 -->
+    <arg name = "lidar_left_camera_calibration_file" default = "$(find lidar_camera_fusion)/calibr_file/DLonng-2011-09-26-drive-0020-synced-K02-color-left-velo.yaml" />
+
+    <!-- 图像点云融合节点 -->
+    <node name = "kitti_lidar_left_camera_fusion_node" pkg = "lidar_camera_fusion" type = "lidar_camera_fusion" output = "screen">
+        <param name = "image_raw" type = "str" value = "$(arg left_image_input)" />
+        <param name = "cloud_raw" type = "str" value = "$(arg cloud_input)" />
+
+        <param name = "semantic_img" type = "str" value = "$(arg semantic_img)" />
+        <param name = "semantic_confidence" type = "str" value = "$(arg semantic_confidence)" />
+
+        <param name = "semantic_cloud_max" type = "str" value = "$(arg semantic_cloud_max)" />
+
+        <param name = "is_kitti" type = "bool" value = "$(arg is_kitti)" />
+
+        <param name = "calibration_file" type = "str" value = "$(arg lidar_left_camera_calibration_file)" />
+    </node>
+
+</launch>

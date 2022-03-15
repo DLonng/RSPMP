@@ -1,0 +1,18 @@
+<launch>
+  <!-- Start fusion node! -->
+  <include file = "$(find lidar_camera_fusion)/launch/lidar_left_camera_fusion.launch" />
+
+  <!-- Start Octomap node! -->
+  <include file = "$(find octomap_generator)/launch/scout_octomap_generator.launch" />
+
+  <!-- Start Lego Loam! -->
+  <include file = "$(find lego_loam)/launch/run_laser_odom.launch" />
+  <!-- <include file = "$(find lego_loam)/launch/demo.launch" /> -->
+  
+  <!-- Only using in map build test! -->
+  <node pkg = "tf2_ros" type = "static_transform_publisher" name = "dlonng_octomap_generator_static_broadcaster" args = "0 0 0 0 0 0 base_link rslidar" />
+
+  <!-- Start octomap_debug.rviz -->
+  <node pkg = "rviz" type = "rviz" name = "dlonng_octomap_generator_rviz" respawn = "false" output = "screen" args = "-d $(find octomap_generator)/rviz/octomap_generator_debug.rviz"/>
+  
+</launch>

@@ -1,0 +1,39 @@
+<launch>
+    <!-- 输入图像缺省值改为 ZED 相机左话题 -->
+    <arg name = "image_input" default = "/zed_node/left_raw/image_raw_color"/>
+    <!-- 输入点云缺省值要改成 Robosense 雷达主题名 -->
+    <arg name = "cloud_input" default = "/rslidar_points"/>
+
+    <!-- Max 语义话题 -->
+    <arg name = "max_semantic" default = "/max_semantic"/>
+    <!-- Bayes 语义话题 -->
+    <arg name = "bayes_semantic" default = "/bayes_semantic"/>
+
+    <!-- Max 图像点云融合输出话题名 -->
+    <arg name = "semantic_cloud_max" default = "/semantic_cloud_max"/>
+    <!-- Bayes 图像点云融合输出话题名 -->
+    <arg name = "semantic_cloud_bayes" default = "/semantic_cloud_bayes"/>
+
+    <!-- 输出订阅的语义消息内部的语义图像 -->
+    <arg name = "semantic_img_topic" default = "/semantic_img_topic"/>
+
+    <!-- 左相机与雷达 Autoware 外参标定文件路径 -->
+    <arg name = "lidar_left_camera_calibration_file" default = "$(find lidar_camera_fusion)/calibr_file/2020-06-02-16-25-autoware_lidar_left_camera_calibration.yaml" />
+
+    <!-- 图像点云融合节点 -->
+    <node name = "lidar_left_camera_fusion_node" pkg = "lidar_camera_fusion" type = "lidar_camera_fusion" output = "screen">
+        <param name = "image_raw" type = "str" value = "$(arg image_input)" />
+        <param name = "cloud_raw" type = "str" value = "$(arg cloud_input)" />
+
+        <param name = "max_semantic" type = "str" value = "$(arg max_semantic)" />
+        <param name = "bayes_semantic" type = "str" value = "$(arg bayes_semantic)" />
+
+        <param name = "semantic_cloud_max" type = "str" value = "$(arg semantic_cloud_max)" />
+        <param name = "semantic_cloud_bayes" type = "str" value = "$(arg semantic_cloud_bayes)" />
+
+        <param name = "semantic_img_topic" type = "str" value = "$(arg semantic_img_topic)" />
+
+        <param name = "calibration_file" type = "str" value = "$(arg lidar_left_camera_calibration_file)" />
+    </node>
+
+</launch>

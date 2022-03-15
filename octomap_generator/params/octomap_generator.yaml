@@ -1,0 +1,71 @@
+octomap:
+    # 0: color tree, 1: max tree, 2: bayes tree
+    tree_type: 1
+    max_pointcloud_topic: "/semantic_cloud_max"
+    bayes_pointcloud_topic: "/semantic_cloud_bayes"
+    scout_status: "/scout_status"
+    world_frame_id: "/map"
+    base_frame_id: "/base_link"
+    resolution: 0.14
+    # 代价地图 14 X 14 m，为了防止出现在代价地图外的体素投影，所以把最大范围设置小于代价地图尺寸的一半
+    # 代价地图的宽度和高度比最大范围多 1 m
+    max_range: 8.0
+    raycast_range: 1.0
+    clamping_thres_min: 0.12
+    clamping_thres_max: 0.97
+    # 这个参数会影响局部地图更新
+    occupancy_thres: 0.5
+    prob_hit: 0.7
+    prob_miss: 0.4
+    save_path : "/home/dlonng/xmu_octomap.ot"
+    using_radius_filter: true
+    outrem_radius: 0.5
+    outrem_neighbors: 15
+    # 相对与 base_link 的高度
+    # 0.332 + 0.1767 = 0.51 一级支架高度
+    # 0.5087 + 0.1525 = 0.66 传感器支架中间高度
+    # 0.5087 + 0.305 = 0.81 传感器顶部
+    # 0.5087 + 0.305 + 0.0817 = 0.90 雷达高度
+    max_green_height: 0.90
+    # scout 车的底盘高度 = 0.348 - 0.207 = 0.14
+    scout_height: 0.14
+    # 大于该高度的未知类别认为是不可通行的障碍物 0.14
+    max_unknow_height: 0.14
+    # 大于该高度的道路体素被认为是路延 0.14 0.28 0.30
+    # 设置很大的值禁用该功能
+    max_road_height: 30.0 # 0.30
+    # 车高 0.90，可以留 10 cm 余量
+    # 该参数调大即对高的体素也投影
+    max_project_height: 1.0 # 0.90
+    #map_file: "/home/dlonng/map.ot"
+    using_single_obstacle_filter: true
+    # 5 大于等于 5 个非障碍物点就滤掉
+    # 6 大于等于 6 个非障碍物点就滤掉
+    # 7 大于等于 7 个非障碍物点就滤掉
+    # 8 大于等于 8 个非障碍物点就滤掉,8 领域必须全部是非障碍物点
+    filter_num: 6
+    using_single_obstacle_inflation: true
+    local_model: true
+    
+    low_risk_cost: 1
+    mid_risk_cost: 2
+    high_risk_cost: 200
+    init_cost: 255
+
+    only_project_semantic: false
+
+    only_project_height: false
+    # 大于 15cm 的体素是障碍物，小于等于 15cm 是地面
+    # 15cm, 20cm, 25cm, 30cm
+    ground_height: 0.30
+
+    project_semantic_height: true
+    # not use
+    traversable_safe_height: 0.30
+    # not use
+    not_traversable_safe_height: 0.50
+    # h_s
+    maybe_traversable_safe_height: 0.50
+    # h_r 该参数调大即对高的体素也投影
+    max_project_height: 1.0 # 0.90
+    gama: 2

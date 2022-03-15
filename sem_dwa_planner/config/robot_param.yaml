@@ -1,0 +1,12 @@
+local_map_frame: map
+robot_frame: base_link
+HZ: 10
+use_cmu_planning: true
+send_goal_model: true
+multi_goal_model: false
+# 最终目标点容忍度
+global_goal_tor: 1.0
+goal_z_tor: 1.0
+# 局部目标点容忍度
+local_goal_tor: 3.0
+rviz_traj_z: 1.0

@@ -1,0 +1,61 @@
+<launch>
+    <!-- 输入图像缺省值改为 ZED 相机左话题  /camera/left/image_raw -->
+    <arg name = "image_input" default = "/zed_node/left_raw/image_raw_color"/>
+
+    <!-- 输入点云缺省值要改成 Robosense 雷达主题名 -->
+    <arg name = "cloud_input" default = "/rslidar_points"/>
+
+    <!-- 语义点云类型 -->
+    <arg name = "semantic_type" default = "1"/>
+
+    <!-- 输入的最大概率语义图像 -->
+    <arg name = "semantic_img_topic" default = "/semantic_img"/>
+    
+    <!-- 输入的最大概率语义图像置信度 -->
+    <arg name = "semantic_confidence" default = "/semantic_array"/>
+
+    <!-- Max 图像点云融合输出话题名 -->
+    <arg name = "semantic_cloud_max" default = "/semantic_cloud_max"/>
+
+    <!-- Bayes 图像点云融合输出话题名 -->
+    <arg name = "semantic_cloud_bayes" default = "/semantic_cloud_bayes"/>
+
+    <!-- 左相机与雷达 Autoware 外参标定文件路径 -->
+    <!-- arg name = "lidar_left_camera_calibration_file" default = "$(find lidar_camera_fusion)/calibr_file/2020-06-02-16-25-autoware_lidar_left_camera_calibration.yaml" /-->
+    
+    <!-- 大车左相机与雷达 Autoware 外参标定文件路径 -->
+    <arg name = "lidar_left_camera_calibration_file" default = "$(find lidar_camera_fusion)/calibr_file/scout/20201101_1552_autoware_lidar_camera_calibration_1.yaml" />
+
+    <arg name = "filter_cloud" default = "false"/>
+    <arg name = "clip_height" default = "1.0"/>
+    <arg name = "clip_near_dist" default = "0.1"/>
+    <arg name = "clip_far_dist" default = "8.0"/>
+    <!-- 这个参数不使用 -->
+    <arg name = "clip_left_right_dist" default = "7.0"/>
+
+    <arg name = "filter_sky_cloud" default = "true"/>
+
+    <!-- 图像点云融合节点 -->
+    <node name = "lidar_camera_fusion_no_msg_sem_node" pkg = "lidar_camera_fusion" type = "lidar_camera_fusion_no_msg_sem" output = "screen">
+        <param name = "image_raw" type = "str" value = "$(arg image_input)" />
+        <param name = "cloud_raw" type = "str" value = "$(arg cloud_input)" />
+
+        <param name = "semantic_type" type = "int" value = "$(arg semantic_type)" />
+
+        <param name = "semantic_img_topic" type = "str" value = "$(arg semantic_img_topic)" />
+
+        <param name = "semantic_cloud_max" type = "str" value = "$(arg semantic_cloud_max)" />
+        <param name = "semantic_cloud_bayes" type = "str" value = "$(arg semantic_cloud_bayes)" />
+
+        <param name = "calibration_file" type = "str" value = "$(arg lidar_left_camera_calibration_file)" />
+
+        <param name = "filter_cloud" value = "$(arg filter_cloud)" />
+        <param name = "clip_height"  value = "$(arg clip_height)" />
+        <param name = "clip_near_dist" value = "$(arg clip_near_dist)" />
+        <param name = "clip_far_dist"  value = "$(arg clip_far_dist)" />
+        <param name = "clip_left_right_dist" value = "$(arg clip_left_right_dist)" />
+
+        <param name = "filter_sky_cloud" value = "$(arg filter_sky_cloud)" />
+    </node>
+
+</launch>

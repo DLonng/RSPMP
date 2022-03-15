@@ -1,0 +1,23 @@
+<launch>
+  <!-- Start ZED! -->
+  <!-- <include file = "$(find zed_cpu_ros)/launch/zed_cpu_ros.launch" /> -->
+
+  <!-- Start Robosense LIDAR! -->
+  <!-- <include file = "$(find rslidar_pointcloud)/launch/rs_lidar_16.launch" /> -->
+
+  <!-- Start fusion node! -->
+  <include file = "$(find lidar_camera_fusion)/launch/kitti_2011_09_26_0020_synced_k02_color_left_velo_fusion.launch" />
+
+  <!-- Start Octomap node! -->
+  <include file = "$(find octomap_generator)/launch/kitti_octomap_generator.launch" />
+
+  <!-- Start octomap_debug.rviz -->
+  <node pkg = "rviz" type = "rviz" name = "kitti_dlonng_octomap_generator_rviz" respawn = "false" output = "screen" args = "-d $(find octomap_generator)/rviz/kitti_octomap_generator_debug.rviz"/>
+
+  <!-- Start Lego Loam! -->
+  <!-- <include file = "$(find lego_loam)/launch/demo.launch" /> -->
+
+  <!-- Only using in map build test! -->
+  <node pkg = "tf2_ros" type = "static_transform_publisher" name = "kitti_dlonng_octomap_generator_static_broadcaster" args = "0 0 0 0 0 0 base_link rslidar" />
+
+</launch>

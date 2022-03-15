@@ -1,0 +1,30 @@
+<package format = "2">
+    <name> lidar_camera_fusion </name>
+
+    <version> 1.0.0 </version>
+
+    <description> This package fusion point cloud and image. </description>
+
+    <url> www.xmu.com </url>
+
+    <author> DLonng </author>
+
+    <maintainer email="dlonnng@gmail.com"> xxx </maintainer>
+
+    <license> BSD </license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend> cv_bridge </depend>
+    <depend> image_transport </depend>
+    <depend> pcl_conversions </depend>
+    <depend> pcl_ros </depend>
+    <depend> roscpp </depend>
+    <depend> tf </depend>
+
+    <build_depend>semantic_msg</build_depend>
+    <exec_depend>semantic_msg</exec_depend>
+
+    <depend> std_msgs </depend>
+
+</package>

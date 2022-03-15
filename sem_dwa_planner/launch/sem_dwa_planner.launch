@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<launch>
+    <arg name="robot_param" default="$(find sem_dwa_planner)/config/robot_param.yaml"/>
+    <arg name="dwa_param" default="$(find sem_dwa_planner)/config/dwa_param.yaml"/>
+    <arg name="way_points" default="$(find sem_dwa_planner)/config/way_points.yaml"/>
+
+    <!-- node pkg="tool_showpath" type="showpath_node" name="showpath_node" output="screen"></node-->
+    
+    <node pkg="sem_dwa_planner" type="sem_dwa_planner" name="sem_dwa_planner" ns="local_planner" output = "screen">
+        <rosparam command="load" file="$(arg robot_param)"/>
+        <rosparam command="load" file="$(arg dwa_param)"/>
+        <rosparam command="load" file="$(arg way_points)"/>
+
+        <remap from="/odom" to="/odom"/>
+        <remap from="/local_goal" to="/local_goal"/>
+        <!-- projected_map -->
+        <remap from="/local_map" to="/octomap_local_sem_costmap"/>
+
+        <remap from="/cmd_vel" to="/cmd_vel"/>
+    </node>
+
+</launch>

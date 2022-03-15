@@ -1,0 +1,19 @@
+<launch>
+
+  <include file = "$(find lidar_camera_fusion)/launch/origin_lidar_camera_fusion.launch" />
+
+  <include file = "$(find octomap_generator)/launch/octomap_generator.launch" />
+
+  <!-- <node pkg = "tf" type = "static_transform_publisher" name = "dlonng_octomap_generator_static_broadcaster" args = "0.259 0 0.370 0 0 0 base_link rslidar 100" /> -->
+  <!-- node pkg = "tf2_ros" type = "static_transform_publisher" name = "base_rslidar_static_transform_publisher" args = "0.259 0 0.411 0 0 0 base_link rslidar" /-->
+  
+  <!-- base_link 应该是车体的 footprint -->
+  <!-- 小车 base_link 车体的高度是 0.222，传感器支架高度是 0.23，雷达高度是 0.041，总共 0.493 -->
+  <node pkg = "tf2_ros" type = "static_transform_publisher" name = "mini_base_rslidar_static_transform_publisher" args = "0.259 0 0.493 0 0 0 base_link rslidar" />
+
+  <!-- 大车 base_link 车体的高度是 0.332，传感器支架高度是 0.1767 + 0.305，雷达高度是 0.041，总共 0.8547 = 0.855 -->
+  <!-- node pkg = "tf2_ros" type = "static_transform_publisher" name = "scout_base_rslidar_static_transform_publisher" args = "0.207 0 0.855 0 0 0 base_link rslidar" /-->
+
+  <node pkg = "rviz" type = "rviz" name = "dlonng_octomap_generator_rviz" respawn = "false" output = "screen" args = "-d $(find octomap_generator)/rviz/agilex_mini_nav.rviz"/>
+
+</launch>

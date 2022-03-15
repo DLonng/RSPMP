@@ -1,0 +1,24 @@
+<launch>
+    <!-- 输入图像缺省值改为 ZED 相机左话题 -->
+    <arg name = "right_image_input" default = "/camera/right/image_raw"/>
+
+    <!-- 输入点云缺省值要改成 Robosense 雷达主题名 -->
+    <arg name = "cloud_input" default = "/rslidar_points"/>
+
+    <!-- 图像点云融合输出话题名 -->
+    <arg name = "fusion_topic" default = "/fusion_cloud"/>
+
+    <!-- 左相机与雷达 Autoware 外参标定文件路径 -->
+    <arg name = "lidar_right_camera_calibration_file" default = "$(find lidar_camera_fusion)/calibr_file/2020-06-03-09-59-autoware_lidar_right_camera_calibration.yaml" />
+
+    <!-- 图像点云融合节点 -->
+    <node name = "lidar_left_camera_fusion_node" pkg = "lidar_camera_fusion" type = "lidar_camera_fusion" output = "screen">
+        <param name = "image_input" type = "str" value = "$(arg right_image_input)" />
+        <param name = "cloud_input" type = "str" value = "$(arg cloud_input)" />
+
+        <param name = "fusion_topic" type = "str" value = "$(arg fusion_topic)" />
+
+        <param name = "calibration_file" type = "str" value = "$(arg lidar_right_camera_calibration_file)" />
+    </node>
+
+</launch>

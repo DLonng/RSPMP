@@ -1,0 +1,4 @@
+<launch>
+    <rosparam file="$(find octomap_generator)/params/scout_octomap_generator.yaml" command="load"/>
+    <node pkg="octomap_generator" type="octomap_generator" name="octomap_generator" output="screen"/>
+</launch>

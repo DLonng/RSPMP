@@ -1,0 +1,13 @@
+<launch>
+    <rosparam file="$(find octomap_generator)/params/octomap_generator.yaml" command="load"/>
+    <node pkg="octomap_generator" type="octomap_generator" name="octomap_generator" output="screen"/>
+
+    <!-- 必须要启动 grid_map_visualization 节点，并且提供参数文件，否则 rviz 显示会提示找不到相应的库 -->
+    <!-- rviz: symbol lookup error: /opt/ros/kinetic/lib//libgrid_map_rviz_plugin.so: undefined symbol: -->
+    <!-- _ZN4rviz12FrameManager17messageFailedImplERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_PNS_7DisplayE-->
+    <!--
+    <node pkg="grid_map_visualization" type="grid_map_visualization" name="grid_map_visualization" output="screen">
+        <rosparam command="load" file="$(find octomap_generator)/params/octomap_generator_gridmap.yaml" />
+    </node>
+    -->
+</launch>

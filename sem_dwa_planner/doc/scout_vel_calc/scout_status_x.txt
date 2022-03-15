@@ -1,0 +1,1257 @@
+header: 
+  seq: 4208
+  stamp: 
+    secs: 1606100626
+    nsecs: 752404470
+  frame_id: ''
+linear_velocity: 0.0
+angular_velocity: 0.0
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.9
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 1.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 0.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 0.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 0.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 82
+rear_light_state: 
+  mode: 2
+  custom_value: 82
+---
+header: 
+  seq: 4209
+  stamp: 
+    secs: 1606100626
+    nsecs: 802413887
+  frame_id: ''
+linear_velocity: 0.008
+angular_velocity: 0.014
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.9
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 21.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 0.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 0.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 35.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 79
+rear_light_state: 
+  mode: 2
+  custom_value: 79
+---
+header: 
+  seq: 4210
+  stamp: 
+    secs: 1606100626
+    nsecs: 852408842
+  frame_id: ''
+linear_velocity: 0.048
+angular_velocity: -0.003
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.9
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 80.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -109.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -96.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 80.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 78
+rear_light_state: 
+  mode: 2
+  custom_value: 78
+---
+header: 
+  seq: 4211
+  stamp: 
+    secs: 1606100626
+    nsecs: 902406644
+  frame_id: ''
+linear_velocity: 0.114
+angular_velocity: -0.017
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.9
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 172.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -222.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -212.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 191.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 76
+rear_light_state: 
+  mode: 2
+  custom_value: 76
+---
+header: 
+  seq: 4212
+  stamp: 
+    secs: 1606100626
+    nsecs: 952418429
+  frame_id: ''
+linear_velocity: 0.158
+angular_velocity: -0.021
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.9
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 231.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -303.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -291.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 275.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 74
+rear_light_state: 
+  mode: 2
+  custom_value: 74
+---
+header: 
+  seq: 4213
+  stamp: 
+    secs: 1606100627
+    nsecs:   2410952
+  frame_id: ''
+linear_velocity: 0.178
+angular_velocity: -0.036
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.9
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 262.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -348.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -344.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 303.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 72
+rear_light_state: 
+  mode: 2
+  custom_value: 72
+---
+header: 
+  seq: 4214
+  stamp: 
+    secs: 1606100627
+    nsecs:  52408759
+  frame_id: ''
+linear_velocity: 0.22
+angular_velocity: -0.03
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 355.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -420.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -405.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 347.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 70
+rear_light_state: 
+  mode: 2
+  custom_value: 70
+---
+header: 
+  seq: 4215
+  stamp: 
+    secs: 1606100627
+    nsecs: 102410632
+  frame_id: ''
+linear_velocity: 0.281
+angular_velocity: -0.014
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 509.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -500.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -505.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 440.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 68
+rear_light_state: 
+  mode: 2
+  custom_value: 68
+---
+header: 
+  seq: 4216
+  stamp: 
+    secs: 1606100627
+    nsecs: 152410841
+  frame_id: ''
+linear_velocity: 0.325
+angular_velocity: 0.005
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 588.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -559.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -559.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 553.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 66
+rear_light_state: 
+  mode: 2
+  custom_value: 66
+---
+header: 
+  seq: 4217
+  stamp: 
+    secs: 1606100627
+    nsecs: 202406507
+  frame_id: ''
+linear_velocity: 0.392
+angular_velocity: 0.016
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 719.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -666.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -697.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 713.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 64
+rear_light_state: 
+  mode: 2
+  custom_value: 64
+---
+header: 
+  seq: 4218
+  stamp: 
+    secs: 1606100627
+    nsecs: 252403548
+  frame_id: ''
+linear_velocity: 0.452
+angular_velocity: 0.005
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 786.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -769.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -793.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 799.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 62
+rear_light_state: 
+  mode: 2
+  custom_value: 62
+---
+header: 
+  seq: 4219
+  stamp: 
+    secs: 1606100627
+    nsecs: 302394317
+  frame_id: ''
+linear_velocity: 0.526
+angular_velocity: 0.007
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 933.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -900.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -914.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 911.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 60
+rear_light_state: 
+  mode: 2
+  custom_value: 60
+---
+header: 
+  seq: 4220
+  stamp: 
+    secs: 1606100627
+    nsecs: 352408157
+  frame_id: ''
+linear_velocity: 0.557
+angular_velocity: 0.012
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 978.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -952.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -958.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 985.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 58
+rear_light_state: 
+  mode: 2
+  custom_value: 58
+---
+header: 
+  seq: 4221
+  stamp: 
+    secs: 1606100627
+    nsecs: 402408654
+  frame_id: ''
+linear_velocity: 0.589
+angular_velocity: 0.011
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 0.0
+    rpm: 1041.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -1019.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: -1003.0
+    temperature: 34.0
+  - 
+    current: 0.0
+    rpm: 1070.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 57
+rear_light_state: 
+  mode: 2
+  custom_value: 57
+---
+header: 
+  seq: 4222
+  stamp: 
+    secs: 1606100627
+    nsecs: 452410943
+  frame_id: ''
+linear_velocity: 0.622
+angular_velocity: 0.014
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1105.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1069.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1101.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1123.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 55
+rear_light_state: 
+  mode: 2
+  custom_value: 55
+---
+header: 
+  seq: 4223
+  stamp: 
+    secs: 1606100627
+    nsecs: 502404337
+  frame_id: ''
+linear_velocity: 0.681
+angular_velocity: 0.007
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1171.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1164.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1186.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1211.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 53
+rear_light_state: 
+  mode: 2
+  custom_value: 53
+---
+header: 
+  seq: 4224
+  stamp: 
+    secs: 1606100627
+    nsecs: 552406722
+  frame_id: ''
+linear_velocity: 0.72
+angular_velocity: 0.001
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1239.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1255.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1242.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1245.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 51
+rear_light_state: 
+  mode: 2
+  custom_value: 51
+---
+header: 
+  seq: 4225
+  stamp: 
+    secs: 1606100627
+    nsecs: 602405843
+  frame_id: ''
+linear_velocity: 0.758
+angular_velocity: -0.002
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.8
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1303.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1334.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1305.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1344.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 49
+rear_light_state: 
+  mode: 2
+  custom_value: 49
+---
+header: 
+  seq: 4226
+  stamp: 
+    secs: 1606100627
+    nsecs: 652406308
+  frame_id: ''
+linear_velocity: 0.81
+angular_velocity: 0.001
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1401.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1415.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1390.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1441.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 47
+rear_light_state: 
+  mode: 2
+  custom_value: 47
+---
+header: 
+  seq: 4227
+  stamp: 
+    secs: 1606100627
+    nsecs: 702407317
+  frame_id: ''
+linear_velocity: 0.85
+angular_velocity: 0.009
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1473.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1494.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1454.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1502.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 45
+rear_light_state: 
+  mode: 2
+  custom_value: 45
+---
+header: 
+  seq: 4228
+  stamp: 
+    secs: 1606100627
+    nsecs: 752406310
+  frame_id: ''
+linear_velocity: 0.924
+angular_velocity: 0.008
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1611.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1595.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1599.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1618.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 43
+rear_light_state: 
+  mode: 2
+  custom_value: 43
+---
+header: 
+  seq: 4229
+  stamp: 
+    secs: 1606100627
+    nsecs: 802397239
+  frame_id: ''
+linear_velocity: 0.976
+angular_velocity: 0.014
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1702.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1677.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1680.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1686.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 41
+rear_light_state: 
+  mode: 2
+  custom_value: 41
+---
+header: 
+  seq: 4230
+  stamp: 
+    secs: 1606100627
+    nsecs: 852410279
+  frame_id: ''
+linear_velocity: 1.025
+angular_velocity: 0.013
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1812.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1768.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1779.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1795.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 39
+rear_light_state: 
+  mode: 2
+  custom_value: 39
+---
+header: 
+  seq: 4231
+  stamp: 
+    secs: 1606100627
+    nsecs: 902408441
+  frame_id: ''
+linear_velocity: 1.081
+angular_velocity: 0.005
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 2.4
+    rpm: 1911.0
+    temperature: 34.0
+  - 
+    current: 0.3
+    rpm: -1867.0
+    temperature: 33.0
+  - 
+    current: 0.3
+    rpm: -1877.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1885.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 37
+rear_light_state: 
+  mode: 2
+  custom_value: 37
+---
+header: 
+  seq: 4232
+  stamp: 
+    secs: 1606100627
+    nsecs: 952399626
+  frame_id: ''
+linear_velocity: 1.139
+angular_velocity: 0.007
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2000.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -1952.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -1987.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 1939.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 36
+rear_light_state: 
+  mode: 2
+  custom_value: 36
+---
+header: 
+  seq: 4233
+  stamp: 
+    secs: 1606100628
+    nsecs:   2406171
+  frame_id: ''
+linear_velocity: 1.164
+angular_velocity: 0.01
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2031.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2008.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2014.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2034.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 33
+rear_light_state: 
+  mode: 2
+  custom_value: 33
+---
+header: 
+  seq: 4234
+  stamp: 
+    secs: 1606100628
+    nsecs:  52411632
+  frame_id: ''
+linear_velocity: 1.201
+angular_velocity: 0.002
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2096.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2096.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2072.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2132.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 32
+rear_light_state: 
+  mode: 2
+  custom_value: 32
+---
+header: 
+  seq: 4235
+  stamp: 
+    secs: 1606100628
+    nsecs: 102407592
+  frame_id: ''
+linear_velocity: 1.255
+angular_velocity: -0.008
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2162.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2216.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2192.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2179.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 29
+rear_light_state: 
+  mode: 2
+  custom_value: 29
+---
+header: 
+  seq: 4236
+  stamp: 
+    secs: 1606100628
+    nsecs: 152408032
+  frame_id: ''
+linear_velocity: 1.289
+angular_velocity: -0.009
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2225.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2267.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2230.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2236.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 28
+rear_light_state: 
+  mode: 2
+  custom_value: 28
+---
+header: 
+  seq: 4237
+  stamp: 
+    secs: 1606100628
+    nsecs: 202404248
+  frame_id: ''
+linear_velocity: 1.322
+angular_velocity: -0.021
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2279.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2308.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2327.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2269.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 26
+rear_light_state: 
+  mode: 2
+  custom_value: 26
+---
+header: 
+  seq: 4238
+  stamp: 
+    secs: 1606100628
+    nsecs: 252408591
+  frame_id: ''
+linear_velocity: 1.356
+angular_velocity: -0.009
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.7
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2349.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2397.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2334.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2359.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 24
+rear_light_state: 
+  mode: 2
+  custom_value: 24
+---
+header: 
+  seq: 4239
+  stamp: 
+    secs: 1606100628
+    nsecs: 302395783
+  frame_id: ''
+linear_velocity: 1.446
+angular_velocity: -0.01
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.6
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2513.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2516.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2528.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2490.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 22
+rear_light_state: 
+  mode: 2
+  custom_value: 22
+---
+header: 
+  seq: 4240
+  stamp: 
+    secs: 1606100628
+    nsecs: 352410206
+  frame_id: ''
+linear_velocity: 1.485
+angular_velocity: -0.011
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.6
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2581.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2585.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2597.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2554.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 20
+rear_light_state: 
+  mode: 2
+  custom_value: 20
+---
+header: 
+  seq: 4241
+  stamp: 
+    secs: 1606100628
+    nsecs: 402407286
+  frame_id: ''
+linear_velocity: 1.525
+angular_velocity: 0.011
+base_state: 0
+control_mode: 0
+fault_code: 0
+battery_voltage: 25.6
+motor_states: 
+  - 
+    current: 3.6
+    rpm: 2657.0
+    temperature: 34.0
+  - 
+    current: 1.4
+    rpm: -2622.0
+    temperature: 34.0
+  - 
+    current: 1.7
+    rpm: -2649.0
+    temperature: 34.0
+  - 
+    current: 1.6
+    rpm: 2664.0
+    temperature: 34.0
+light_control_enabled: False
+front_light_state: 
+  mode: 2
+  custom_value: 18
+rear_light_state: 
+  mode: 2
+  custom_value: 18

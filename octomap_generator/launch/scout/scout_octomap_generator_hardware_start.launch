@@ -1,0 +1,10 @@
+<launch>
+  <!-- Start ZED! -->
+  <include file = "$(find zed_cpu_ros)/launch/zed_cpu_ros.launch" />
+
+  <!-- Start Robosense LIDAR! -->
+  <include file = "$(find rslidar_pointcloud)/launch/rs_lidar_16.launch" />
+  
+  <!-- Start scout, need run init_can.sh -->
+  <include file = "$(find scout_bringup)/launch/scout_minimal.launch" /> 
+</launch>
