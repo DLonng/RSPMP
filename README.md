@@ -39,7 +39,7 @@ RSPMP: https://link.springer.com/article/10.1007/s10489-022-03283-z
 
 ## 启动
 ### 建图
-1. 如果只跑建图，可以录制数据集（可惜我的数据集忘记保存了。。。。）
+1. 如果只跑建图，可以录制数据集（可惜毕业时我的数据集忘记保存了。。。。）
 2. 录制数据集：/raw_img, /raw_lidar, /tf，/semantic_img, /semantic_confidence
 3. 单独启动融合节点：roslaunch lidar_camera_fusion lidar_camera_fusion_no_msg_sem.launch
 4. 单独启动建图节点：roslaunch octomap_generator octomap_generator.launch
@@ -49,3 +49,11 @@ RSPMP: https://link.springer.com/article/10.1007/s10489-022-03283-z
 
 ### 规划
 - 该项目没有提供仿真，我当时直接用的实车（Agilex Scout）
+-   1. roalaunch sem_dwa_planner sem_dwa_planner.launch
+- 在实车上启动如下节点：
+    1. 所以需要的传感器驱动节点
+    2. 融合节点：https://www.bilibili.com/video/BV1Sp4y1S74w/?spm_id_from=333.999.0.0
+    3. 建图节点：https://www.bilibili.com/video/BV1Q64y1D75N/?spm_id_from=333.999.0.0
+    4. 规划节点：https://www.bilibili.com/video/BV1eT4y1P7bZ/?spm_id_from=333.999.0.0
+- 在 rviz 上点击目标点即可开始规划
+-   1. roalaunch sem_dwa_planner sem_dwa_planner_tf_rviz.launch
