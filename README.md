@@ -2,6 +2,8 @@
 
 RSPMP: https://link.springer.com/article/10.1007/s10489-022-03283-z
 
+本文的代码只是一个 demo，可以帮助理解论文的方法，想进一步研究可以参考：
+1. [evelation_mapping](https://github.com/ANYbotics/elevation_mapping)
 
 ## 编译
 ### 环境
