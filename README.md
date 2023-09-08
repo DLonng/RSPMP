@@ -2,9 +2,6 @@
 
 RSPMP: https://link.springer.com/article/10.1007/s10489-022-03283-z
 
-reference project：
-1. [evelation_mapping](https://github.com/ANYbotics/elevation_mapping)
-
 ## Build
 ### environment
 - os：Ubuntu16.04 or Ubuntu18.04
@@ -55,3 +52,6 @@ This project does not provide a model for the semantic segmentation node. You ca
     4. planning node：https://www.bilibili.com/video/BV1eT4y1P7bZ/?spm_id_from=333.999.0.0
 - set a point in rviz
 -   1. roalaunch sem_dwa_planner sem_dwa_planner_tf_rviz.launch
+
+## reference project：
+[evelation_mapping](https://github.com/ANYbotics/elevation_mapping)
