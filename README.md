@@ -2,60 +2,56 @@
 
 RSPMP: https://link.springer.com/article/10.1007/s10489-022-03283-z
 
-本文的代码只是一个 demo，可以帮助理解论文的方法，想进一步研究可以参考：
+reference project：
 1. [evelation_mapping](https://github.com/ANYbotics/elevation_mapping)
 
-## 编译
-### 环境
-- 环境：Ubuntu16.04 or Ubuntu18.04
+## Build
+### environment
+- os：Ubuntu16.04 or Ubuntu18.04
 - Ros: kinetic or Melodic
-- 依赖：octomap_server, gridmap
+- depend：octomap_server, gridmap
 
-### 过程
-1. git clone 整个项目到你的 ros 工作空间
+1. git clone git@github.com:DLonng/RSPMP.git
 2. catkin_make
-3. 项目依赖较少，如果遇到相关库的依赖问题，根据报错提示安装即可：sudo apt-get install ros-[dist]-[xxx]
+3. according error to apt install lib：sudo apt-get install ros-[dist]-[xxx]
 
-
-## 节点介绍
+## Node
 ### agilex_msgs
-- 功能：提供相关语义点云的自定义 msg
+- custom msg for semantic pointcloud
 
 ### lidar_camera_fusion
-- 功能；融合点云和语义图像，输出语义点云
-- 输入：原始点云，原始语义图像，标定矩阵，语义置信度（语义分割网络 softmax 输出）
-- 输出：语义点云
+- fun: fusion pointcloud and semantic img, output semantic pointcloud
+- input: raw pointcloud, raw semantic img, calibration matrix, semantic confidence
+- output: semantic pointcloud
 
 ### octomap_generator
-- 功能：根据输入的语义点云和定位信息，实时构建自车为中心的局部语义 3D 体素地图，并投影成 2D costmap 用于后续局部规划
-- 输入：融合的语义点云，定位 tf
-- 输出：语义 3D 体素地图，2D costmap
+- fun: based on the input semantic point cloud and localization information, real-time construction of a local semantic 3D voxel map centered around the vehicle, which is then projected into a 2D cost map for subsequent local path planning
+- input: fusion semantic pointcloud, location tf
+- output: semantic 3D voxel map, 2D costmap
 
 ### sem_dwa_planner
-- 功能：根据 2D costmap 使用 dwa 做局部规划，dwa 增加 语义 cost，规划过程最小化语义 cost
-- 输入：2D costmap，自车状态
-- 输出：车辆控制信号
+- fun: incorporate DWA (Dynamic Window Approach) for local planning based on the 2D costmap, with DWA introducing semantic costs. The planning process minimizes semantic costs.
+- input: 2D costmap, ego status
+- output: ego control signals
 
-### 语义分割节点
-这个项目没有提供语义分割节点的模型，你可以使用任何一种实时的语义分割模型。
+### semantic segmentation node
+This project does not provide a model for the semantic segmentation node. You can use any real-time semantic segmentation model of your choice.
 
-## 启动
-### 建图
-1. 如果只跑建图，可以录制数据集（可惜毕业时我的数据集忘记保存了。。。。）
-2. 录制数据集：/raw_img, /raw_lidar, /tf，/semantic_img, /semantic_confidence
-3. 单独启动融合节点：roslaunch lidar_camera_fusion lidar_camera_fusion_no_msg_sem.launch
-4. 单独启动建图节点：roslaunch octomap_generator octomap_generator.launch
-5. 融合+建图：roalaunch octomap_generator octomap_generator_mapping_scout.launch
+## Run
+### Mapping
+1. Only mapping, you can record dataset
+2. dataset topics：/raw_img, /raw_lidar, /tf，/semantic_img, /semantic_confidence
+3. start fusion node：roslaunch lidar_camera_fusion lidar_camera_fusion_no_msg_sem.launch
+4. start mapping node：roslaunch octomap_generator octomap_generator.launch
+5. fusion + mapping：roalaunch octomap_generator octomap_generator_mapping_scout.launch
 
-主要就是把数据集路上，然后在 launch 里面设置好 topic 的名称，启动即可，要注意的是你的数据集中 tf 树里面要有 lidar 到 map 的变换，因为建图是在 lidar 坐标系下做的。
-
-### 规划
-- 该项目没有提供仿真，我当时直接用的实车（Agilex Scout）
+### Planning
+- This project does not provide a simulation. I used a vehicle directly at the time.（Agilex Scout）
 -   1. roalaunch sem_dwa_planner sem_dwa_planner.launch
-- 在实车上启动如下节点：
-    1. 所以需要的传感器驱动节点
-    2. 融合节点：https://www.bilibili.com/video/BV1Sp4y1S74w/?spm_id_from=333.999.0.0
-    3. 建图节点：https://www.bilibili.com/video/BV1Q64y1D75N/?spm_id_from=333.999.0.0
-    4. 规划节点：https://www.bilibili.com/video/BV1eT4y1P7bZ/?spm_id_from=333.999.0.0
-- 在 rviz 上点击目标点即可开始规划
+- start nodes in vehicle：
+    1. all sensor nodes
+    2. fusion node：https://www.bilibili.com/video/BV1Sp4y1S74w/?spm_id_from=333.999.0.0
+    3. mapping node：https://www.bilibili.com/video/BV1Q64y1D75N/?spm_id_from=333.999.0.0
+    4. planning node：https://www.bilibili.com/video/BV1eT4y1P7bZ/?spm_id_from=333.999.0.0
+- set a point in rviz
 -   1. roalaunch sem_dwa_planner sem_dwa_planner_tf_rviz.launch
