@@ -53,5 +53,5 @@ This project does not provide a model for the semantic segmentation node. You ca
 - set a point in rviz
 -   1. roalaunch sem_dwa_planner sem_dwa_planner_tf_rviz.launch
 
-## reference project：
+## reference project
 [evelation_mapping](https://github.com/ANYbotics/elevation_mapping)
