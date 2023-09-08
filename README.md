@@ -8,9 +8,9 @@ RSPMP: https://link.springer.com/article/10.1007/s10489-022-03283-z
 
 ## Build
 ### environment
-- os：Ubuntu16.04 or Ubuntu18.04
-- Ros: kinetic or Melodic
-- depend：octomap_server, gridmap
+- OS：Ubuntu16.04 or Ubuntu18.04
+- ROS: kinetic or Melodic
+- Depend：octomap_server, gridmap
 
 1. git clone git@github.com:DLonng/RSPMP.git
 2. catkin_make
@@ -35,7 +35,7 @@ RSPMP: https://link.springer.com/article/10.1007/s10489-022-03283-z
 - input: 2D costmap, ego status
 - output: ego control signals
 
-### semantic segmentation node
+### semantic segmentation
 This project does not provide a model for the semantic segmentation node. You can use any real-time semantic segmentation model of your choice.
 
 ## Run
